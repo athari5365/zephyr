@@ -1,0 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_NIOSV_M_A10SOC
+	bool "Intel NIOSV/m Arria10SOC"
+	depends on SOC_INTEL_RISCV_M

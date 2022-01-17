@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: Apache-2.0
+
+if BOARD_NIOSV_M_A10SOC
+
+config BOARD
+	default "niosv_m_a10soc"
+
+endif # BOARD_NIOSV_M_A10SOC
