@@ -7,7 +7,19 @@
 #include <zephyr.h>
 #include <sys/printk.h>
 
+bool g_debug = false;
+char *version = "POC";
+
 void main(void)
 {
-	printk("Hello World! %s\n", CONFIG_BOARD);
+    //while loop
+    while(g_debug == true){};
+
+    printk("Hello World loop 5 times\n");
+    for(int i=0;i<5;i++) {
+	printk("%d: Hello World from RISCV Zephyr! BOARD=%s, version=%s.\n",i+1, CONFIG_BOARD, version);
+    }
+
+    printk("main End\n");
+    return;
 }

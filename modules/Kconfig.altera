@@ -5,4 +5,4 @@
 
 config HAS_ALTERA_HAL
 	bool "Altera HAL drivers support"
-	depends on NIOS2
+	depends on NIOS2 || SOC_SERIES_INTEL_NIOSV

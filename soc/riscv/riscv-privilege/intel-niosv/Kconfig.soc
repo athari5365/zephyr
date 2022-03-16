@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: Apache-2.0
+
+choice
+	prompt "INTEL NIOSV SOC"
+	depends on SOC_SERIES_INTEL_NIOSV
+
+config SOC_INTEL_RISCV_M
+	bool "Intel NIOSV Microcontroller"
+	select ATOMIC_OPERATIONS_C
+	select INCLUDE_RESET_VECTOR
+
+endchoice
